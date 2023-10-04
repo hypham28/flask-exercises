@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h2>List of Registered Users</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Organization</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for name, organization in users.items() %}
+                <tr>
+                    <td>{{ name }}</td>
+                    <td>{{ organization }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <p><a href="/">Back to Home</a></p>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h2>Enter an Integer</h2>
+    <form method="post" action="/">
+        <label for="number">Number:</label>
+        <input type="text" id="number" name="number" required>
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h2>Register for a Student Organization</h2>
+    <form method="post" action="/register">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="organization">Organization:</label>
+        <select id="organization" name="organization" required>
+            <option value="" disabled selected>Select an organization</option>
+            <option value="Organization 1">Organization 1</option>
+            <option value="Organization 2">Organization 2</option>
+            <option value="Organization 3">Organization 3</option>
+            <option value="Organization 4">Organization 4</option>
+            <option value="Organization 5">Organization 5</option>
+        </select><br><br>
+
+        <button type="submit">Register</button>
+    </form>
+{% endblock %}

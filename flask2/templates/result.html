@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h2>Result</h2>
+    {% if error %}
+        <p>{{ error }}</p>
+    {% else %}
+        <p>You entered: {{ user_input }}</p>
+        <p>{{ message }}</p>
+    {% endif %}
+{% endblock %}
