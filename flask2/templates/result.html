@@ -1,11 +1,10 @@
 {% extends "layout.html" %}
 
 {% block content %}
-    <h2>Result</h2>
-    {% if error %}
-        <p>{{ error }}</p>
+    {% if number is defined %}
+        <p>You entered: {{ number }}</p>
+        <p>It is {{ is_even }}.</p>
     {% else %}
-        <p>You entered: {{ user_input }}</p>
-        <p>{{ message }}</p>
+        <p>Error: Please enter a valid integer.</p>
     {% endif %}
 {% endblock %}

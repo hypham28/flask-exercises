@@ -1,10 +1,9 @@
 {% extends "layout.html" %}
 
 {% block content %}
-    <h2>Enter an Integer</h2>
-    <form method="post" action="/">
-        <label for="number">Number:</label>
+    <form method="POST">
+        <label for="number">Enter an integer:</label>
         <input type="text" id="number" name="number" required>
-        <button type="submit">Submit</button>
+        <input type="submit" value="Check">
     </form>
 {% endblock %}

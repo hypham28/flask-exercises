@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Number Checker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <header>
@@ -9,11 +10,14 @@
     </header>
     <nav>
         <ul>
-            <li><a href="/">Home</a></li>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
         </ul>
     </nav>
     <main>
         {% block content %}{% endblock %}
     </main>
+    <footer>
+        <p>&copy; 2023 Number Checker</p>
+    </footer>
 </body>
 </html>
